@@ -1,4 +1,5 @@
 # README - Quy trình làm bài báo ứng dụng AI theo nhóm trên Git
+hello
 
 ## 1. Mục tiêu của repository
 
