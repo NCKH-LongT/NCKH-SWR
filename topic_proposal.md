@@ -83,11 +83,7 @@ Liệt kê ít nhất 5 bài báo liên quan.
 | No | Title | Year | Source | Link / DOI |
 |---|---|---|---|---|
 | 1 | Academic procrastination and mobile phone addiction among college students: The mediating role of bedtime procrastination|2021 |Journal of Affective Disorders (Elsevier) |https://doi.org/10.1016/j.jad.2021.07.032|
-
 | 2 |Systematic review of research on artificial intelligence applications in higher education – where are the educators? |2019 | International Journal of Educational Technology in Higher Education (Springer)|https://doi.org/10.1186/s41239-019-0171-0 |
-
 | 3 |Predictive models for student procrastination in online learning environments Using Machine Learning |2022|Education and Information Technologies (Springer)|https://doi.org/10.1007/s10639-022-11105-z |
-
 | 4 | Leveraging Large Language Models for Conversational Agents in Intelligent Tutoring Systems| 2024| Computers and Education: Artificial Intelligence (Elsevier)| https://doi.org/10.1016/j.caeai.2024.100215|
-
 | 5 | Designing conversational Agents for adaptive instructional support in business simulation gaming| 2023|ScienceDirect. |https://www.sciencedirect.com/science/article/pii/S2666920X2600038X |
