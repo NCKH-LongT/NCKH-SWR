@@ -78,7 +78,7 @@ Nhóm sẽ đánh giá hệ thống như thế nào?
 
 # 11. Related Papers
 
-Liệt kê ít nhất 5 bài báo liên quan.
+
 
 | No | Title | Year | Source | Link / DOI |
 |---|---|---|---|---|
