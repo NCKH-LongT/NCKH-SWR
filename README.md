@@ -9,7 +9,8 @@
 - SE203024- Nguyễn Hữu Thành
 
 # Topic :  
-Xây dựng ứng dụng trợ lý ảo AI hỗ trợ quản lý thời gian và giảm thiểu hành vi trì hoãn học tập cho học sinh, sinh viên (AI-Driven Anti-Procrastination Assistant for Students).
+Xây dựng ứng dụng trợ lý ảo cá nhân ứng dụng Trí tuệ nhân tạo nhằm giảm thiểu hành vi trì hoãn học tập và nâng cao năng lực quản lý thời gian cho học sinh, sinh viên 
+( AI-Driven Personal Assistant for Mitigating Academic Procrastination and Enhancing Time Management among Students )
 
 # Danh sách files :
 0. README.md : thông tin về nhóm
