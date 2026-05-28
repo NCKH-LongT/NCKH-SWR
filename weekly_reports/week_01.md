@@ -39,4 +39,12 @@ Members: Văng Khánh Khuyên, Võ Gia Huy, Nguyễn Văn Quốc Bảo, Võ Nguy
 
 ## Questions for Instructor
 
-- None for this week.
+- RQ1: How effectively can multi-device behavioral data fusion using XGBoost improve the accuracy of distinguishing between inactive awake states and actual sleep compared with single-device smartphone approaches?
+
+Sub-questions
+
+- RQ1.1: Can fused behavioral features from both smartphones and laptops significantly reduce sleep duration overestimation errors?
+  
+- RQ1.2: How accurately can the XGBoost model identify sleep onset and wake-up times using non-intrusive cross-device activity logs?
+  
+- RQ1.3: Can the proposed system achieve high classification performance while remaining lightweight enough to operate efficiently on student-level hardware?
