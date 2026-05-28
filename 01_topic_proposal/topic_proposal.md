@@ -87,3 +87,13 @@ Nhóm sẽ đánh giá hệ thống như thế nào?
 | 3 |Predictive models for student procrastination in online learning environments Using Machine Learning |2022|Education and Information Technologies (Springer)|https://doi.org/10.1007/s10639-022-11105-z |
 | 4 | Leveraging Large Language Models for Conversational Agents in Intelligent Tutoring Systems| 2024| Computers and Education: Artificial Intelligence (Elsevier)| https://doi.org/10.1016/j.caeai.2024.100215|
 | 5 | Designing conversational Agents for adaptive instructional support in business simulation gaming| 2023|ScienceDirect. |https://www.sciencedirect.com/science/article/pii/S2666920X2600038X |
+
+# 12. Research Questions
+
+### Main Research Question
+* **RQ1:** How effectively can an AI-driven personalized assistant mitigate academic procrastination and improve focus time among students compared with traditional passive time-management applications?
+
+### Sub-questions
+* **RQ1.1:** Can LLMs trained on behavioral psychology scenarios successfully identify a student's lack of motivation and generate appropriate context-aware encouragement?
+* **RQ1.2:** How accurately can basic machine learning models predict a student's distraction index based on their historical application usage patterns?
+* **RQ1.3:** To what extent can the integration of gamification and proactive AI reminders reduce late assignment submissions and increase daily average study duration?
