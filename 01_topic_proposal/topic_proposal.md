@@ -2,111 +2,70 @@
 
 ## 1. Group Information
 
-- Class: SE2037
+- Class: SE2027
 - Group: G01
 - Leader: Văng Khánh Khuyên
-- Members: Văng Khánh Khuyên, Võ Gia Huy, Nguyễn Văn Quốc Bảo, Võ Nguyễn Thiên Phú, Đỗ Thanh Triết
+- Members: Võ Nguyễn Thiên Phú, Võ Gia Huy, Nguyễn Văn Quốc Bảo, Đỗ Thanh Triết
 
 ## 2. Proposed Title
 
-English title: 
-> Multi-Device Behavioral Data Fusion Using XGBoost for Accurate Distinction Between Inactive Awake and Actual Sleep
+**Tiếng Anh:** Essential Skills for Business Analysts in the Age of Artificial Intelligence: A Systematic Literature Review
 
-Vietnamese title: 
->Hợp nhất dữ liệu hành vi đa thiết bị sử dụng XGBoost để phân biệt chính xác giữa trạng thái “Thức nhưng không sử dụng thiết bị” và “Ngủ thực sự”
+**Tiếng Việt:** Các kỹ năng thiết yếu của Business Analyst trong kỷ nguyên Trí tuệ Nhân tạo: Một nghiên cứu tổng quan hệ thống tài liệu
 
+## 3. Research Domain
 
-## 3. Application Domain
+Software Requirements Engineering · Business Analysis · Systematic Literature Review (method/lens)
 
-Healthcare
+The study sits at the intersection of Requirements Engineering (RE) and Human-Centered AI. It examines how the emergence of AI — particularly Generative AI and Large Language Models — is reshaping the competency expectations for Business Analyst professionals who are responsible for eliciting, specifying, and managing software requirements.
 
 ## 4. Problem Statement
 
-Most existing sleep tracking applications primarily rely on data from a single device, typically a smartphone, which leads to frequent misclassification between two distinct states: “Inactive Awake” (the user is awake but not interacting with the device) and “Actual Sleep”. This issue commonly occurs when users switch to working on a laptop, reading on a Kindle, or simply put their phone aside while remaining awake.
+Business Analysts are the primary bridge between business stakeholders and development teams. Their core responsibilities — requirements elicitation, stakeholder communication, process modeling, and specifications writing — are now being augmented or partially automated by AI tools. This rapid shift creates a knowledge gap: neither practitioners nor educators have a clear, evidence-based picture of which BA skills remain critical, which are becoming obsolete, and which new competencies are required.
 
-As a result, these applications often overestimate sleep duration, reducing the reliability and usefulness of sleep monitoring. Although some studies have explored multi-device approaches, there is still limited research on effectively fusing detailed behavioral data from both smartphones and laptops to accurately distinguish between these two states in real-world scenarios.
+Existing literature on BA competencies (e.g., IIBA BABOK v3, IREB CPRE standards) was formulated before the large-scale adoption of Generative AI. Several SLRs have examined AI's impact on software engineering broadly (Cheng et al., 2026; Arora et al., 2024) and on workforce skill transformation generally (MDPI, 2024), but no systematic review has focused specifically on:
+- The skills required of BA professionals in an AI-augmented RE context,
+- The gap between skills described in academic literature versus those demanded in job postings,
+- How professional standards (BABOK, CPRE) need to evolve.
 
+This study addresses that gap through a rigorous Systematic Literature Review (SLR) following the Kitchenham & Charters (2007) protocol, supplemented by a targeted analysis of current industry job advertisements.
 ## 5. Motivation
 
-In today’s digital lifestyle, young adults and office workers frequently switch between smartphones and laptops, making accurate sleep tracking increasingly challenging. Current applications often fail to differentiate between putting devices aside while still awake and actually falling asleep, leading to poor sleep monitoring quality.
+### Industry urgency
+The rapid evolution of the software industry and the role of Business Analysts (BAs) in Requirements Engineering (RE) creates an urgent need for skill updates:
 
-This research aims to address this gap by developing a multi-device behavioral data fusion model using XGBoost to improve the distinction between “Inactive Awake” and “Actual Sleep”. XGBoost is selected for its strong performance on tabular data, efficiency on student-level hardware, and good interpretability, contributing to a practical AI solution for digital health applications.
+- According to the study arXiv:2511.14767 (2025), an AI-powered analysis of **3,745 IT job postings** in Vietnam showed that skills related to **Requirements Analysis** and **Business Analysis** are among the most in-demand competencies. This highlights the critical position of BAs in modern software projects.
+- Globally, the demand for **AI-related skills** in IT roles has grown significantly (PwC, OECD, and Lightcast reports, 2025). Many leading organizations are already deploying AI tools for RE tasks such as LLM-assisted elicitation, automated specification generation, and ambiguity detection. However, traditional BA competency frameworks (e.g., BABOK by IIBA) have not yet been systematically updated to incorporate AI literacy.
+- While AI tools for Requirements Engineering are in active production use, many BA training programs — especially in Vietnam and other emerging markets — have not kept pace with these changes, resulting in a noticeable gap between industry demand and workforce readiness.
 
-## 6. Target Users
 
-The primary target users of this research are young adults and office workers aged 18–35 who frequently use multiple digital devices (smartphones and laptops) in their daily lives. These users often switch between devices for work, entertainment, and study until late at night.
+## 6. Target Context
 
-## 7. Proposed AI Model / Method
 
-#### Model: 
-> XGBoost (eXtreme Gradient Boosting)
-#### Method:
- A Multi-Device Behavioral Data Fusion approach using XGBoost as the main classifier. The system extracts rich behavioral features from both smartphones and laptops, then fuses them into a unified feature vector for training and inference.
+**Professionals:** Practising and aspiring Business Analysts, Requirements Engineers, Systems Analysts, and Product Owners in software development organisations (tập trung vào sinh viên undergraduate và những người mới bắt đầu sự nghiệp).
 
-## 8. System Features
+**Organisations:** Small-to-large software companies and IT departments across industries where BA roles involve AI-assisted tooling or AI-related projects.
 
-#### 1. Multi-Device Data Collection
-- Collect behavioral data from both smartphone and laptop in real-time.
-- Support cross-device user identification via account synchronization.
+**Geography:** Global literature in English (2019–2025), with particular attention to the Vietnamese job market for validation.
 
-#### 2. Behavioral Feature Extraction
-- Smartphone: screen status, touch events, scrolling, typing, app usage, motion (accelerometer), idle duration.
-- Laptop: mouse movement, keyboard activity, foreground applications, system idle time, etc.
+**Education:** Undergraduate SE programmes, BA certification bodies (IIBA, IREB, PMI-PBA), and corporate L&D teams designing upskilling pathways.
 
-#### 3. Sleep State Classification
-- Real-time / near real-time classification: Inactive Awake vs Actual Sleep.
-- Optional: Sleep duration estimation.
+**Literature scope:** Peer-reviewed papers indexed in IEEE Xplore, ACM Digital Library, Scopus, and Google Scholar; grey literature from IIBA, IREB, WEF Future of Jobs reports, and industry surveys.
 
-#### 4. Dashboard & Visualization
-- Daily sleep report with sleep start/end time.
-- Device usage patterns before sleep.
-- Accuracy feedback and manual correction (user feedback loop).
+## 7. Preliminary Research Questions
 
-## 9. Expected Contribution
 
-- Develop a multi-device system that uses behavioral data from both smartphone and laptop to better distinguish between “Inactive Awake” and “Actual Sleep” states.
-- Show that XGBoost can work well for this sleep detection task when combining data from multiple devices.
-- Build a lightweight AI model that is suitable for students and can be used in a real MVP application.
-- Collect and provide a small multi-device behavioral dataset (phone + laptop) for future research.
-- Give practical experience and guidelines on building multi-device AI systems for sleep tracking.
+**RQ1.** What skills are identified in the existing literature as essential for Business Analysts working in software development environments where AI tools are being adopted?
+ 
+**RQ2.** How do current job postings in the software industry reflect the demand for AI-related skills in Business Analyst roles?
+ 
+**RQ3.** What gap exists between the skills highlighted in academic literature and those required in real-world BA job postings?
+ 
 
-## 10. Evaluation Plan
-
-#### 1. Dataset
-
-- Collect real data from 10 - 15 students (including the team members themselves).
-- Each participant will use the system for 5–7 days.
-- Labeling will be done using a simple sleep diary — participants manually record their actual sleep and wake-up times.
-- Data split: 70% for training, 30% for testing.
-
-#### 2. Baseline Models
-
-- Single-device model (using only smartphone data).
-- Rule-based model (based on idle time threshold).
-
-#### 3. Evaluation Metrics
-
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- Sleep onset time error (in minutes)
-- Sleep duration estimation error
-
-#### 4. User Testing & Survey
-
-- Participants will test the system and complete a short survey about: Perceived accuracy of the system, ease of use, somparison with existing sleep tracking apps.
-
-- Conduct short interviews with some users to gather feedback and improvement suggestions.
-
-## 11. Related Papers
-
-Liệt kê ít nhất 5 bài báo liên quan.
+## 8. Related Papers (preliminary)
 
 | No | Title | Year | Source | Link / DOI |
 |---|---|---|---|---|
-| 1 | Toss 'n' turn: smartphone as sleep and sleep quality detector | 2013 | CHI | https://dl.acm.org/doi/pdf/10.1145/2556288.2557220 |
-| 2 | Sleep quality prediction from wearable data using deep learning | 2016 | JMIR mHealth and uHealth | https://mhealth.jmir.org/2016/4/e125/ |
-| 3 | SensibleSleep: A Bayesian Model for Learning Sleep Patterns from Smartphone Events | 2017 | PLoS ONE | https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0169901&type=printable |
-| 4 | Unobtrusive sleep monitoring using smartphones | 2013 | PervasiveHealth | https://ieeexplore.ieee.org/document/6563918 |
-| 5 | Towards Circadian Computing: "Early to Bed and Early to Rise" Makes Some of Us Unhealthy and Sleep Deprived | 2014 | ACM UbiComp | https://dl.acm.org/doi/pdf/10.1145/2632048.2632100 |
+| 1 | | | | |
+| 2 | | | | |
+| 3 | | | | |
