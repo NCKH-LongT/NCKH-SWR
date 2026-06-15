@@ -2,12 +2,12 @@
 
 ## Main Research Questions
 
-**How to build an AI system (combining Machine Learning and Large Language Models) to detect learning risks early, automatically warn, and provide personalized study plans, advice, and materials to help students study better?**
+**Main RQ: How can requirements be specified and validated for an early warning system that helps academic advisors identify and support at-risk students?**
 
 ## Sub Research Questions
 
-- Sub-RQ1: How effective is the Random Forest model in predicting risks and building an Early Warning System to warn students early?
-- Sub-RQ2: How can RAG and LLM help in personalizing student learning, answering students' questions, and giving accurate plans, materials, and advice?
-- Sub-RQ3: What are the best system architectures to integrate predictive machine learning models with generative AI components using LLMs?
-- Sub-RQ4: What are the ethical challenges and privacy concerns regarding student data analytics and algorithmic bias in predictive education systems?
-- Sub-RQ5: How can academic advisors review, edit, and provide feedback on AI-generated plans to improve the system's future recommendations?
+- RQ1: What requirements should be collected from students, lecturers, and academic advisors to identify early signs of academic risk?
+
+- RQ2: What functional and non-functional requirements are needed for student risk alerts, personalized support plans, and advisor review?
+
+- RQ3: How can academic advisors validate whether the warning messages and suggested support plans are useful and understandable?
