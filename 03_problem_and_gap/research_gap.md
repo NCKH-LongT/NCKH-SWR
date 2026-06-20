@@ -118,4 +118,4 @@ Looking across all seven papers:
 | G4: CLO feedback framework is manual, not automated | P06 | "requires significant effort from instructors", "evaluated in a limited number of class cohorts" | Automation of CLO mapping and feedback generation via RAG |
 | G5: No AI-assisted LMS research in Vietnam context | P07 | "does not evaluate technical enhancements like AI integrations" | Non-functional requirements for AI LMS adoption in Vietnamese universities |
 | G6: System too complex for lightweight LMS integration | P01 | "difficult to integrate directly into lightweight LMS platforms" | Non-functional requirements for deployment constraints and response time |
-| G7: No integrated evaluation framework | P02, P03, P05, P07 | Each paper covers only 1–2 dimensions; P03 admits missing Ragas | A unified framework combining faithfulness + CLO alignment + user acceptance |
+| G7: No integrated evaluation framework | P02, P03, P05, P07 | Each paper covers only 1–2 dimensions; P03 admits missing Ragas | A unified framework combining faithfulness + CLO alignment + user acceptance | 
