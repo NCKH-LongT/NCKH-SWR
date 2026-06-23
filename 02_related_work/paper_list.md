@@ -1,6 +1,4 @@
-# Literature Mapping for Research Questions
 
----
 
 # RQ1. What skills are identified in the existing literature as essential for Business Analysts working in software development environments where AI tools are being adopted?
 
@@ -45,19 +43,3 @@
 | **Business–Technology Bridging Role** | AI-enabled BAs increasingly act as intermediaries between business objectives and technical implementation. | Nakash & Peretz |
 | **Academia–Industry Gap** | Academic research and educational curricula lag behind rapidly evolving industry requirements. | Kowalska-Styczeń & Juszczyk; Cheng et al. |
 | **Growing Demand for AI-Enabled BAs** | Industry demand is increasing for Business Analysts who can work effectively with AI-supported technologies and processes. | Nakash & Peretz; Kowalska-Styczeń & Juszczyk |
-
----
-
-# Preliminary Answers to Research Questions
-
-## RQ1
-
-The literature suggests that Business Analysts in AI-enabled software development environments require a combination of traditional BA competencies (analysis, communication, stakeholder management, project management) and emerging AI-related skills such as AI literacy, prompt engineering, AI output evaluation, and responsible AI usage.
-
-## RQ2
-
-Current job postings increasingly demand hybrid skill profiles. Employers seek Business Analysts who can combine technical awareness of AI technologies with communication, leadership, and cross-functional collaboration capabilities. Real-world recruitment data indicates that communication skills are often prioritized even above some technical AI competencies.
-
-## RQ3
-
-A gap exists between academic literature, educational preparation, and industry expectations. Academic research often focuses on conceptual AI applications and emerging technologies, whereas employers prioritize practical hybrid skill sets, communication abilities, leadership, and immediately applicable AI-related competencies.
