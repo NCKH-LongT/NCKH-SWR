@@ -1,0 +1,9 @@
+# Problem Statement
+
+The adoption of Artificial Intelligence (AI), particularly Large Language Models (LLMs), is transforming software development practices and reshaping knowledge-intensive roles within software organizations. Business Analysts (BAs), who traditionally bridge business needs and technical implementation, are increasingly expected to work alongside AI-powered tools in activities such as requirements elicitation, analysis, documentation, validation, and stakeholder communication.
+
+Existing literature highlights the growing importance of AI-related competencies, including AI literacy, prompt engineering, and the ability to evaluate AI-generated outputs. At the same time, traditional BA skills such as analytical thinking, communication, stakeholder management, and decision-making remain essential. This suggests that the role of the Business Analyst is evolving rather than being replaced by AI technologies.
+
+However, there is limited understanding of which AI-related skills are consistently identified as important for Business Analysts in software development environments. Furthermore, while academic studies discuss emerging AI competencies, it is unclear whether these competencies are reflected in current industry hiring practices. Existing research also suggests a gap between academic recommendations and real-world organizational needs, particularly in the context of digital transformation and AI adoption.
+
+Therefore, this study aims to investigate the skills required for Business Analysts in AI-enabled software development environments, examine how these skills are reflected in current job postings, and identify potential gaps between academic literature and industry expectations.

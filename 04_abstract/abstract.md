@@ -1,0 +1,11 @@
+# Abstract
+
+Artificial Intelligence (AI), particularly Large Language Models (LLMs), is increasingly being adopted in software development environments, transforming how organizations perform knowledge-intensive activities such as requirements elicitation, analysis, documentation, and decision support. As a result, the role of the Business Analyst (BA) is evolving, requiring professionals to balance traditional business analysis competencies with emerging AI-related skills. However, existing studies primarily focus on Requirements Engineering, Product Management, or general AI-related occupations, while limited research specifically examines the competencies required for Business Analysts in AI-enabled software development environments. In addition, little evidence exists regarding whether the AI-related skills emphasized in academic literature are reflected in real-world Business Analyst job postings.
+
+This study aims to identify the skills considered essential for Business Analysts in software development environments adopting AI tools, examine how these skills are represented in current job postings, and explore potential gaps between academic recommendations and industry expectations. To achieve this, a literature review was conducted using selected studies related to Business Analysis, Requirements Engineering, AI adoption, and labor market demand.
+
+The findings indicate that traditional competencies such as communication, analytical thinking, stakeholder management, and project coordination remain important. At the same time, AI-related capabilities, including AI literacy, prompt engineering, understanding LLM limitations, and human–AI collaboration, are becoming increasingly relevant. The review also suggests a gap between competencies emphasized in academic research and those prioritized in industry recruitment.
+
+The study contributes to a better understanding of the evolving Business Analyst role and provides insights for educators, students, and practitioners preparing for AI-enabled software development environments.
+
+**Keywords:** Business Analyst, Artificial Intelligence, Large Language Models, Software Development, AI Literacy
