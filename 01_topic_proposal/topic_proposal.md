@@ -42,7 +42,7 @@ The rapid evolution of the software industry and the role of Business Analysts (
 ## 6. Target Context
 
 
-**Professionals:** Practising and aspiring Business Analysts, Requirements Engineers, Systems Analysts, and Product Owners in software development organisations (tập trung vào sinh viên undergraduate và những người mới bắt đầu sự nghiệp).
+**Professionals:** Practising and aspiring Business Analysts, Requirements Engineers, Systems Analysts, and Product Owners in software development organisations.
 
 **Organisations:** Small-to-large software companies and IT departments across industries where BA roles involve AI-assisted tooling or AI-related projects.
 

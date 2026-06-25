@@ -2,111 +2,124 @@
 
 ## Citation
 
-* **Title:** Developing a Data Trust Model (Not Only) for Sleep Research: Conceptual Study and Quantitative Survey
-* **Authors:** Raphael Jan Dressle, Dieter Riemann, Nicole Thoma, Christina Erler, Rodger Burmeister, Bianka Jogwitz, Katharina Domschke, Kai Spiegelhalder, Joachim Boldt, Svenja Wiertz, Bernd Feige
-* **Year:** 2025
-* **Source:** JMIR Human Factors (Volume 12, e66513)
-* **DOI/Link:** https://doi.org/10.2196/66513
+**Title:**  
+Recommendations for Efficient and Responsible LLM Adoption within Industrial Software Development
 
----
+**Authors:**  
+Krishna Ronanki, Beatriz Cabrero-Daniel, Tomas Herda, Stefan Sitkovich, Jennifer Horkoff, Christian Berger
+
+**Year:**  
+2026
+
+**Source:**  
+Information and Software Technology, Volume 196, August 2026, Article 108171
+
+**DOI/Link:**  
+https://doi.org/10.1016/j.infsof.2026.108171
 
 ## Problem
 
-The paper addresses a critical legal, ethical, and organizational bottleneck in digital health informatics: the low availability and high fragmentation of medical health data for secondary research use.
-
-### The Core Conflict
-While healthcare platforms generate massive streams of sensitive physiological and tracking data (such as continuous polysomnography or wearable signals), this data remains locked in institutional silos. The strict enforcement of privacy laws like the European GDPR classifies even pseudonymized healthcare keys as personal identifiable data, explicitly preventing easy data reuse without strict legal bases.
-
-### The Human and Process Challenge
-To safely unlock this data, platforms must balance three conflicting stakeholder vectors:
-1. Data Subjects (Patients/Users): Willing to share data but demand ultimate transparency, absolute data security, and an active say in who uses their bedroom or physiological data.
-2. Data Users (Researchers): Require standardized formats, dense metadata structures, and scalable querying tools without heavy bureaucratic friction.
-3. Data Generating Institutions (Clinics/Centers): Require ironclad compliance verification to satisfy legal liabilities and maintain patient care duties.
-
----
+The paper investigates how Large Language Models (LLMs) can be adopted efficiently and responsibly within industrial software development. While LLMs are increasingly being integrated into software engineering activities, organizations lack empirically grounded guidance on how to use these tools effectively, how to evaluate their outputs, and how to integrate them into existing software development processes while maintaining human oversight and accountability.
 
 ## Method
 
-The authors engineered and evaluated a comprehensive data trust framework called SouveMed, specifically tailored for medical data secondary usage in sleep research. The methodology was executed in a 5-step participatory lifecycle:
+The study employs a **multi-case study** followed by a **survey-based evaluation**.
 
-### 1. Requirements Elicitation
-Conducted initial surveys and workshops involving 14 foundational participants (10 data subjects, 4 data users) to outline baseline functional parameters.
+The multi-case study involved:
 
-### 2. Multi-Tiered Structural Design
-The technical framework separated the onboarding process from the active consent act, implementing a Tiered Consent Model. Users can dynamically adjust data access privileges over time via a digital web interface.
+- 15 semi-structured interviews
+- 3 industrial software development organizations
 
-### 3. Automated Contract Matching Architecture
-At the system's core, the authors built a neutral data-trust matching server. It automatically parses the legal requirements of the clinic, the permission levels of the user, and the data request queries of the researcher using constraint-solving mechanics to execute zero-human-intervention authorization.
+The interview data were analyzed using thematic analysis to identify common themes regarding LLM adoption.
 
-### 4. Interactive Prototype Validation (Two Evaluation Rounds)
-* Round 1 Evaluation: Testing static interface mock-ups with an active cohort to capture primary behavioral friction.
-* Round 2 Evaluation: Deploying a refined functional web application prototype incorporating programmatic algorithms under a controlled execution sandbox ("curious containers") to preserve user privacy.
+Based on the findings, the authors synthesized seven recommendations for industrial LLM adoption.
 
----
+The recommendations were subsequently evaluated through an online survey involving:
 
-## Dataset
+- 43 responses collected
+- 41 valid responses analyzed
 
-The empirical datasets compiled and utilized during this human-factors evaluation consist of:
-* Psychometric and Evaluation Survey Data: Gathered across sequential testing groups comprising 22 active evaluators in Round 1 (11 sleep patients, 11 professional researchers) and 16 active evaluators in Round 2 (10 sleep patients, 6 research data users).
-* Demographic Profile Stratification: Tracks historical data sharing willingness, baseline technical and app literacy, age distributions (ranging from 18 to 75 years), and general stakeholder expectations.
+The survey assessed practitioners’ agreement with the proposed recommendations across different industries and levels of prompt-engineering proficiency.
 
----
+## Context
 
-## Evaluation
+The study was conducted within the context of **industrial software development**.
 
-The programmatic usability and psychosocial acceptance of the SouveMed data trust prototype were quantified through three core measurement batteries:
+The participating organizations were actively exploring or adopting LLM-based tools in software engineering activities.
 
-### 1. Human-Computer Trust Scale (HCTS)
-A 12-item metrics instrument assessing user trust mapped directly into three essential dimensions:
-* Benevolence: The user's systemic belief that the platform prioritizes their personal health privacy interests.
-* Competence: Verification that the technical architecture accurately handles and filters complex constraints.
-* Perceived Risk: The quantitative probability score assigned by users regarding potential data leaks or privacy harms.
+The investigated use cases included:
 
-### 2. User Version of the Mobile Application Rating Scale (uMARS)
-Quantifies application frontend and software quality across standardized fields evaluated on a 5-point scale:
-* Functionality: Evaluating navigation clarity, step-by-step logic, and interface learnability.
-* Aesthetics: Gauging the raw visual appeal and layout layout distribution.
+- Requirements Engineering (RE)
+- Software development
+- Documentation generation
+- Coding assistance
+- Knowledge retrieval
+- Learning and exploration of new domains
 
-### 3. Quantitative Statistical Verification
-Mean group score deltas between Evaluation Round 1 and Evaluation Round 2 were analytically calculated via Independent-samples Welch t-tests to prove usability enhancements, calculating Hedges' g for precise effect sizing.
+The study focuses on real-world organizational environments where practitioners use tools such as GitHub Copilot, Microsoft Copilot, Amazon Q, Retrieval-Augmented Generation (RAG) systems, and other LLM-based assistants.
 
----
+## Key Findings
 
-## Results
+The thematic analysis identified six major themes regarding LLM adoption:
 
-* **Sustained Structural Trust:** Across both deployment cycles, data subjects maintained an exceptional, unchanging baseline trust score in the data trust concept, showing a high mean rating in both evaluation rounds.
-* **Significant Usability Progression:** The refinement of the web interface led to a massive, statistically significant jump in the researcher-facing system's Functionality score. It surged from Round 1 up to Round 2 with a remarkably large effect size.
-* **High Institutional Feasibility:** When presented with the decentralized data trust model, 100% of institutional data protection officers and medical representatives formally agreed to the conceptual adoption of SouveMed within their live infrastructure workflows.
-* **The User Engagement Requirement:** 60% of data subjects declared it vital to receive continuous project descriptions, and 50% demanded active feedback channels detailing the clinical findings derived specifically from their shared data.
+- AI Assistant
+- Evaluation
+- Applicability
+- Human Oversight and Agency
+- LLM Effect on Workflows
+- User Skills
 
----
+The study found that practitioners generally view LLMs as assistants or co-pilots rather than autonomous decision-makers.
+
+Practitioners emphasized that:
+
+- LLMs should support human work rather than replace it.
+- Human oversight and validation remain essential.
+- The usefulness of LLM outputs is often more important than perfect accuracy.
+- Different LLMs are suitable for different tasks and domains.
+- Existing workflows may need to be restructured to accommodate LLM integration.
+- Effective LLM usage requires both domain knowledge and knowledge of how to interact with LLMs.
+
+The study synthesized seven recommendations:
+
+- R1: Use LLMs as assistants with human oversight rather than fully automating tasks.
+- R2: Prioritize usefulness over strict output accuracy when evaluating LLM outputs.
+- R3: Include relevant stakeholders in evaluating LLM-generated outputs.
+- R4: Use task-specific LLMs only for tasks they are designed to support.
+- R5: Develop and implement human oversight and validation mechanisms.
+- R6: Create room for LLMs within business processes through workflow restructuring.
+- R7: Support users through training, knowledge-sharing activities, and specialized education.
+
+Survey results showed that six of the seven recommendations received majority agreement from respondents, indicating that the recommendations are applicable beyond the original case organizations.
+
+The study also found that practitioners with higher prompt-engineering proficiency showed stronger agreement with recommendations related to LLM output evaluation.
 
 ## Limitations
 
-* Sample Scale Constraints: The quantitative evaluation relied on a small pool of trial subjects (22 and 16 participants across successive iterations), limiting broad statistical generalizability.
-* Demographic Selection Bias: The testing population was drawn exclusively from a single clinical university sleep laboratory context, meaning participants possessed higher-than-average technical or clinical literacy.
-* Short-Term Interaction Window: The survey tracks prompt, immediate perceptions of usability and trust during controlled testing, leaving long-term compliance behaviors or consent fatigue unmeasured.
+- The multi-case study involved only three organizations and fifteen interview participants.
 
----
+- The findings are based primarily on practitioners’ experiences and perceptions rather than objective performance measurements.
+
+- The participating organizations may not represent all industrial software development contexts.
+
+- The survey sample size was relatively limited, with 41 usable responses.
+
+- The recommendations were derived from organizations already experimenting with LLM technologies and may not fully reflect organizations with little or no LLM adoption experience.
 
 ## Relevance to our topic
 
-This paper serves as the explicit operational foundation for your project's RQ1 (User Requirements) and RQ3 (Validation):
+This paper is highly relevant to the research topic because it provides empirical evidence regarding the competencies and practices required when adopting AI tools within software development environments.
 
-### 1. Concrete Blueprint for RQ1 (Privacy & User Control Specification)
-The paper proves that users reject "all-or-nothing" privacy approaches. To build high user adoption among students, your Software Requirements Specification (SRS) must feature the exact core mechanism validated in SouveMed: Tiered Data Control. Your functional architecture should explicitly separate the user onboarding stage from the granular permission state machine, allowing students to turn off specific bedroom telemetry logs while continuing to trust the primary application ecosystem.
+Specifically, the paper identifies several capabilities that are relevant to modern Business Analysts:
 
-### 2. Methodological Playbook for RQ3 (Empirical Prototype Verification)
-You can directly replicate SouveMed's validation pipeline for your project's evaluation phase. Instead of presenting a generic UI, your evaluation methodology can deploy a similar two-stage validation loop. You can utilize their exact standardized uMARS and HCTS metric variables to statistically prove to your project evaluation board that your multi-device conflict resolution interface directly minimizes user confusion and mathematically builds long-term user trust.
+- Domain knowledge
+- Understanding how LLMs work
+- Prompt engineering skills
+- Ability to evaluate AI-generated outputs
+- Stakeholder collaboration during output evaluation
+- Knowledge-sharing and continuous learning
+- Human oversight and decision-making capabilities
 
----
+The findings contribute directly to **RQ1** by identifying AI-related competencies required for professionals working alongside LLMs in software development environments.
 
-## Possible improvement (Novelty for Your Project)
-
-Your system can advance beyond the SouveMed framework by introducing the following engineering innovations:
-
-### 1. Requirements for Dynamic Multi-Device Conflict Explanations
-SouveMed focuses on automated constraint matching based on legal terms but does not explain algorithmic discrepancy to the user. Your project can pioneer Contextual Explanation Requirements. When your system runs its matching layers and detects a data conflict (for example, a student's watch records zero motion but their phone logs active application use), the system should generate a clear, transparent notification rather than just hiding the conflict. You can empirically test if this cross-device explanation pattern increases the Human-Computer Trust score.
-
-### 2. Automating Consent Triggers Based on Academic Deadlines
-While SouveMed utilizes a static time-based archive for consent validity, your target domain allows for Context-Aware Dynamic Privacy Policies. You can specify software requirements where the data trust system automatically scales its data collection up or down depending on the student's academic cycle (such as requesting tighter multi-device tracking during exam weeks to detect sleep depreciation, while reverting to absolute minimal tracking during holiday breaks), optimizing the trade-off between tracking accuracy and data exposure.
+The paper also supports **RQ3** by highlighting practical skills and organizational practices that emerge from industrial adoption experiences, which may not be fully represented in traditional educational programs or academic discussions.

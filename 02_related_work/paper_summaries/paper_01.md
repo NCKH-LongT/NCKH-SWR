@@ -1,122 +1,114 @@
-# Paper 01 Summary 
+# Paper 01 Summary
 
 ## Citation
 
-*   **Title:** Technologies for sleep monitoring at home: wearables and nearables
-*   **Authors:** Heenam Yoon & Sang Ho Choi
-*   **Year:** 2023
-*   **Source:** Biomedical Engineering Letters (Volume 13, Issue 3, pp. 313–327)
-*   **DOI/Link:** https://doi.org/10.1007/s13534-023-00305-8 (PMCID: PMC10382403)
+**Title:**  
+Preparing Business Analysts for the Modern Job Market: A Comparative Analysis of Skills and Education
 
----
+**Authors:**  
+Agnieszka Kowalska-Styczeń, Kinga Juszczyk
+
+**Year:**  
+2024
+
+**Source:**  
+Scientific Papers of Silesian University of Technology – Organization and Management Series, No. 208, pp. 215–231
+
+**DOI/Link:**  
+https://doi.org/10.29119/1641-3466.2024.208.13
 
 ## Problem
 
-The paper addresses the critical bottleneck of transitioning sleep medicine from clinical environments to long-term home monitoring. 
-
-### The Core Conflict
-The clinical gold standard for sleep staging is **Polysomnography (PSG)**, which records a comprehensive suite of physiological signals (EEG, EOG, EMG, ECG, and respiratory effort). While highly accurate, PSG is extremely obtrusive, expensive, and limits longitudinal (night-by-night) sleep tracking.
-
-### The Technical Challenge for Consumer Technologies
-To replace PSG at home, market alternatives like smartwatches and bedside radars have emerged. However, these systems face a severe engineering challenge: **the inability to accurately distinguish between quiet wakefulness (lying completely still in bed while awake) and actual sleep.** 
-*   **Actigraphy-only systems** rely purely on motion. When a user is in a state of "inactive awake time" (e.g., scrolling phone, reading, or meditating in the dark), motion drops to zero. 
-*   Without multi-modal sensors, standard algorithms misclassify this entire period as sleep, severely overestimating **Sleep Efficiency (SE)** and underestimating **Sleep Onset Latency (SOL)**.
-
----
+The study investigates whether current university programs adequately prepare future Business Analysts for the demands of the modern labor market. The authors focus on the alignment between educational offerings in business analytics-related programs and the competencies required by employers, particularly in the context of digital transformation and the growing adoption of technologies such as Artificial Intelligence (AI), Machine Learning (ML), and Big Data.
 
 ## Method
 
-The authors synthesize the technical architectures of home monitoring by splitting them into two macro-domains, mapping out their underlying hardware and signal processing pipelines:
+The study employs a **comparative analysis** approach.
 
-### 1. Wearables Architectural Pipeline
-*   **Sensing Layer:** Uses **3-axis Accelerometers** to capture raw acceleration ($g$-force) and **Photoplethysmography (PPG)** sensors using green/red/infrared LEDs to measure changes in blood volume.
-*   **Feature Extraction Layer:** 
-    *   *Motion:* Traces movement counts, zero-crossing rates, and signal magnitude areas.
-    *   *Autonomic Nervous System (ANS):* Traces **Heart Rate Variability (HRV)** features in both Time-Domain (SDNN, rMSSD) and Frequency-Domain (Low Frequency/High Frequency ratio - LF/HF).
-*   **Classification Layer:** Employs advanced deep networks like **Bidirectional Long Short-Term Memory (BiLSTM)** and **Convolutional Neural Networks (CNNs)** to classify 3-stage (Wake, NREM, REM) or 4-stage (Wake, Light, Deep, REM) sleep.
+The researchers collected data from official university curricula, syllabi, and course catalogs of selected Polish universities. Courses within business analytics-related specializations were categorized according to the competencies they develop:
 
-### 2. Nearables Architectural Pipeline
-*   **Radio Frequency (RF) / Radar Systems:** Uses **Impulse Radio Ultra-Wideband (IR-UWB)** and **Continuous Wave (CW) Doppler** radars to isolate sub-millimeter chest wall displacements caused by respiration (0.1–0.5 Hz) and heartbeats (1.0–3.0 Hz).
-*   **Ballistocardiography (BCG):** Piezoelectric or polyvinylidene fluoride (PVDF) film sensors embedded inside mattresses or pillows to measure the mechanical recoil forces of the body caused by blood ejection.
-*   **Acoustic Sensing:** Microphones recording room audio, passing signals through Bandpass Filters (200 Hz – 2000 Hz) to extract acoustic signatures of snoring and breathing.
+- Analytical Skills
+- Technical Skills
+- Communication Skills
+- Project Management Skills
 
----
+The analysis included:
 
-## Dataset
+- 5 Bachelor's degree programs
+- 5 Engineering degree programs
 
-The paper reviews outcomes validated against two primary data paradigms:
+The educational analysis was further correlated with labor market data obtained from wage reports, labor demand statistics, Google Trends, and IT industry reports to assess how well academic programs align with market needs.
 
-1.  **Clinical/Benchmark Datasets (Ground Truth Control):**
-    *   **PhysioNet / Sleep Heart Health Study (SHHS):** Public repositories containing full-channel PSG data used to train deep learning networks.
-    *   **Multi-Center Clinical Cohorts:** Studies where patients wore consumer devices (e.g., Apple Watch, Fitbit, Oura Ring) *simultaneously* while undergoing clinical PSG tests in hospital sleep units.
-2.  **In-The-Wild Consumer Datasets:**
-    *   Large-scale unlabelled datasets collected from commercial cloud servers to showcase real-world noise, such as device removal mid-night, battery depletion events, and erratic sleep schedules.
+## Context
 
----
+The study was conducted within the context of **higher education in Poland**.
 
-## Evaluation
+The analyzed programs included specializations related to:
 
-The paper details how home sleep technologies are benchmarked using a rigorous dual-layer metric framework:
+- Business Analytics
+- Data Analytics
+- IT Business Analyst
+- Data Engineering
+- Software Engineering and Data Analysis
 
-### 1. Statistical Classification Metrics
-Algorithms are evaluated by constructing a confusion matrix against PSG epoch-by-epoch (30-second windows) scoring:
-*   **Overall Accuracy (ACC):** The percentage of correctly identified epochs across all stages.
-*   **Sensitivity (True Positive Rate) for Wake vs. Sleep:** Specifically tracking how well the system detects the Wake state.
-*   **Cohen’s Kappa Coefficient ($\kappa$):** Measures inter-rater agreement between the AI model and the human expert score, adjusting for chance:
+The labor market context reflects increasing demand for Business Analysts due to ongoing digital transformation initiatives and the widespread adoption of technologies such as AI, ML, IoT, and Big Data across organizations.
 
-$$\kappa = \frac{p_o - p_e}{1 - p_e}$$
+## Key Findings
 
-### 2. Clinical Sleep Parameters (Epoch Aggregations)
-*   **Total Sleep Time (TST):** Total minutes classified as sleep.
-*   **Sleep Onset Latency (SOL):** The time taken to transition from full wakefulness to the first epoch of sleep.
-*   **Wake After Sleep Onset (WASO):** Total minutes spent awake after initially falling asleep.
-*   **Sleep Efficiency (SE):** Calculated as:
+- The role of the Business Analyst has evolved significantly from a traditional intermediary between business and IT departments into a strategic partner supporting organizational decision-making and digital transformation initiatives.
 
-$$SE = \left( \frac{TST}{\text{Total Time in Bed}} \right) \times 100\%$$
+- Modern Business Analysts are expected to possess a diverse set of competencies spanning technical, analytical, and interpersonal domains.
 
----
+- The study identifies four primary competency categories required for Business Analysts:
+  - Analytical Skills
+  - Communication Skills
+  - Technical Skills
+  - Project Management Skills
 
-## Results
+- Analytical skills include logical thinking, problem analysis, trend identification, statistical understanding, forecasting, and modeling techniques.
 
-*   **The Power of Wearable Multi-Modal Fusion:** Systems using *only* Accelerometers achieve poor accuracy in sleep staging (ACC ~ 65-70%) and fail during inactive wake times. However, when **Accelerometry is fused with PPG (HRV features)**, deep learning models achieve an ACC of **78% to 86%** and a Kappa ($\kappa$) of **0.55 to 0.72**.
-*   **Nearable Radar Precision:** Non-contact IR-UWB radar systems demonstrate exceptional capabilities in tracking breathing patterns, allowing them to detect **Sleep Apnea (Apnea-Hypopnea Index - AHI)** with a correlation coefficient of $r > 0.85$ compared to PSG.
-*   **The Inactive Wake Breakthrough:** The combination of autonomic nervous system tracking (via PPG) and macro-motion tracking (via Actigraphy) allows systems to detect the **Sympathetic Hyperarousal** characteristic of wakefulness. Even when a person lies perfectly still, their heart rate variability exhibits an elevated LF/HF ratio, exposing the fact that they are awake.
+- Communication skills include teamwork, adaptability, time management, report preparation, presentation skills, and the ability to communicate complex analytical findings to stakeholders.
 
----
+- Technical skills include data management, data analysis, and proficiency with tools used to process large datasets and generate insights.
+
+- Project management skills involve managing the lifecycle of analytical projects from problem identification to implementation of recommendations.
+
+- Bachelor's degree programs generally provide a more balanced and comprehensive skill set, including communication and interpersonal competencies.
+
+- Engineering degree programs primarily emphasize technical and analytical skills while providing limited opportunities to develop communication and project management competencies.
+
+- The study highlights increasing market demand for Business Analysts:
+  - The U.S. Bureau of Labor Statistics projects an 11% increase in demand between 2023 and 2033.
+  - In Poland, Business Analyst job postings in the IT sector increased by approximately 2.5 times in 2022 compared to the previous year.
+
+- As organizations increasingly adopt AI, ML, and other digital technologies, Business Analysts are expected to bridge business objectives and technological implementation.
+
+- The authors conclude that educational programs should maintain a balance between technical expertise and interpersonal competencies to better meet labor market expectations.
 
 ## Limitations
 
-*   **The Multi-Occupancy Failure Mode (Nearable Vulnerability):** Bedside radars and microphones cannot isolate signals effectively if two people share the same bed due to overlapping radar reflections.
-*   **Motion Artifacts (Wearable Vulnerability):** Voluntary movements like tossing and turning create massive high-amplitude noise in PPG sensors, leading to corrupted optical readings and missing data data.
-*   **Lack of Demographic Diversity:** Most algorithmic models reviewed were trained on specific clinical populations or young, healthy cohorts, often failing when deployed on demographics with irregular sleep architecture.
+- The study focuses exclusively on universities in Poland.
 
----
+- The analysis is based on educational curricula and secondary labor market data.
+
+- The research does not include direct input from employers.
+
+- The study does not evaluate how the acquired competencies affect graduates' long-term career success or adaptation to labor market changes.
+
+- The findings may not be fully generalizable to educational systems or labor markets outside Poland.
 
 ## Relevance to our topic
 
-This paper serves as the primary **Architectural Blueprint** for your project:
+This paper is highly relevant to the research topic for several reasons:
 
-### 1. Direct Solution
-The paper proves that a single device cannot solve the "inactive awake time" problem reliably. To distinguish inactive awake time from sleep, your system must mandate **Multi-Device Multi-Sensor Fusion**. 
-*   If Device A (Wrist-worn Accelerometer) reports `Motion = 0`, the system must not immediately infer `Status = Sleep`. 
-*   It must analyze Wearable PPG data. If `HRV = Sympathetic Dominance (High LF/HF Ratio)`, the system overrides the motion sensor and correctly flags the epoch as `Inactive Awake Time`.
+- It identifies the core competencies expected from modern Business Analysts, including analytical, technical, communication, and project management skills.
 
-### 2. Engineering Functional Requirements (FR)
-You can directly derive your software's functional requirements from the sensor pipelines reviewed in the paper:
-*   *FR-1:* The system shall ingest data streams concurrently from a wearable unit (PPG, 3-axis Accelerometer) and a nearable environment unit.
-*   *FR-2:* The system shall execute a time-synchronization protocol to align epoch timestamps ($T_{\text{epoch}} = 30s$) across all connected devices with a maximum clock drift of $\le 100\text{ms}$.
+- It demonstrates how the Business Analyst role is evolving in response to digital transformation and the increasing adoption of AI-related technologies.
 
----
+- It provides evidence that employers increasingly expect Business Analysts to combine business knowledge with technical understanding.
 
-## Possible improvement (Novelty for Your Project)
+- It contributes directly to **RQ1** by identifying the skills considered essential for Business Analysts working in technology-driven environments.
 
-Your team can build upon this review paper by engineering concrete solutions to the gaps it identifies, turning them into your research's core contributions:
+- It contributes to **RQ2** by discussing labor market trends and the growing demand for Business Analysts with advanced analytical and technology-related capabilities.
 
-### 1. Formulating a "Multi-Device Failover and Trust Hierarchy"
-The review paper lists the pros and cons of devices but doesn't provide a software architecture for when one device fails. Your team can design a **Dynamic Trust-Weighted State Machine** for your requirements specification:
-*   *Scenario:* If high motion noise is detected on the Wearable, the system automatically decreases Wearable PPG trust weight and increases Bedside Radar trust weight for sleep staging.
-
-### 2. Designing Requirements for the "Student Screen-Time Context"
-Since your target demographic includes students, you can introduce a third, unconventional monitoring device: **The Smartphone Screen-State/Application Log**. 
-*   Students frequently lie completely still in bed while scrolling through social media (inactive awake time). 
-*   By adding a functional requirement to track **Smartphone Interaction Events** (Screen On/Off states, touch telemetry) and fusing this with the wearable's accelerometer data, your system can achieve high classification accuracy for this specific user group without needing expensive medical-grade radar sensors.
+- It contributes to **RQ3** by explicitly examining the alignment between academic education and labor market expectations, highlighting potential gaps between educational preparation and industry needs.
