@@ -1,4 +1,4 @@
-# Weekly Report - Week 1
+# Weekly Report - Week 01
 
 ## Group Information
 
@@ -9,28 +9,28 @@
 
 ## Tasks Completed This Week
 
-| Member             | Task                              | Result    |
-| ------------------ | --------------------------------- | --------- |
-| Nguyen Trong Toan  | Setup and check infomation        | Completed |
-| Huynh Viet Phat    | Find 2 papers and AI models       | Completed |
-| Phan Bao Duy       | Find 3 papers                     | Completed |
-| Pham Trong Nghia   | Find 1 paper and evaluation plan  | Completed |
-| Vu Tran Phuc Khang | Draft and update topic infomation | Completed |
+| Member            | Task                                     | Result |
+| ----------------- | ---------------------------------------- | ------ |
+| Nguyen Trong Toan | Select topic and write topic proposal    | Done   |
+| Nguyen Trong Toan | Assign tasks and write task assignments. | Done   |
 
 ## Git Commits
 
-| Commit ID            | Message                  | Author            |
-| -------------------- | ------------------------ | ----------------- |
-| toan22102006a-collab | topic: update topic info | Nguyen Trong Toan |
+| Commit ID                                | Message                                          | Author            |
+| ---------------------------------------- | ------------------------------------------------ | ----------------- |
+| 9d841d752e2940ce3baea8326c37b892631a0725 | topic: update topic and files                    | Nguyen Trong Toan |
+| 02eb13df7c36e8969865816f119926c3204c77a3 | topic: update task assignment and topic proposal | Nguyen Trong Toan |
 
 ## Current Problems
 
-- Tasks have not yet been assigned to team members for Week 2.
+- We haven't found enough articles to meet the requirements.
+- We haven't fully agreed on the assignment of tasks to the team members.
 
 ## Plan for Next Week
 
-- Assigned tasks for team members and done Week 2 tasks.
+- Find 7 relevant articles.
+- Write search_keywords.md.
 
 ## Questions for Instructor
 
-- ...
+- With this topic, are there any areas where our team can further develop the project, or are there any difficulties we might encounter in its implementation?
