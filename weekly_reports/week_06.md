@@ -21,6 +21,8 @@
 
 | Commit ID | Message | Author |
 |---|---|---|
+| 347dd3 | Merge pull request #54 from thinhppse182396-create/SE2037_G04 | Nguyễn Hoàng Anh Khoa |
+| 3f84a77| update: điều chỉnh nội dung cho phù hợp, theo đúng hướng đi mới. | Nguyễn Hoàng Anh Khoa |
 
 ## Current Problems
 
