@@ -5,12 +5,16 @@
 - **Title:** Automated Educational Question Generation at Different Bloom's Skill Levels using Large Language Models: Strategies and Evaluation
 - **Authors:** Nicy Scaria, Suma Dharani Chenna, Deepak Subramani
 - **Year:** 2024
-- **Source:** arXiv / Springer (Lecture Notes in Artificial Intelligence, volume 14830)
+- **Source:** arXiv / Springer (Lecture Notes in Artificial Intelligence, volume 14830, AIED 2024)
 - **DOI/Link:** https://doi.org/10.1007/978-3-031-64299-9_12 / https://arxiv.org/abs/2408.04394
 
 ## Problem
 
 The study focuses on automated educational question generation (AEQG) that aligns with different cognitive levels of Bloom's Taxonomy (from remembering to creating) for large-scale online education. Designing diverse questions that adhere to Bloom's Taxonomy manually requires significant effort from instructors. Most previous AQG systems could only generate questions at lower cognitive levels (recalling facts directly from text) or were limited by the lack of high-quality fine-tuning datasets.
+
+## Research Methodology
+
+This study uses a comparative experiment design, evaluating 5 LLMs across 5 prompting strategies for Bloom's Taxonomy-aligned question generation. Quality is assessed through both expert human evaluation — using a 9-item hierarchical rubric with early stopping, rated by 2 Data Science instructors — and automated LLM-based evaluation using Gemini Pro. Inter-rater agreement is measured via Cohen's Kappa and Quadratic Weighted Kappa. The study also measures question diversity using the PINC score.
 
 ## Method
 
@@ -49,11 +53,9 @@ Question quality was evaluated via:
 
 ## Relevance to our topic
 
-- Proves the feasibility of guiding LLMs to generate questions aligned with Bloom's Taxonomy cognitive levels to meet Course Learning Outcomes (CLOs).
-- Offers a practical lesson on prompt design: directly apply the PS4 prompting strategy (CoT + Bloom/CLO explanation + few-shot examples) to the LMS quiz generation system.
-- Inherits a highly scientific 9-item hierarchical rubric and an early stopping mechanism to optimize the instructor's question quality evaluation process.
+This paper is relevant to our requirements engineering focus in two ways. First, the 9-item hierarchical rubric validated by expert instructors represents a concrete, stakeholder-validated set of quality acceptance criteria for Bloom-aligned questions — which is exactly the kind of requirements validation instrument that is absent from most quiz generation systems. Second, the finding that automated LLM-based evaluation is not on par with human evaluation directly confirms that stakeholder validation cannot be bypassed by technical means, reinforcing the need to formally specify human-in-the-loop review as a functional requirement rather than an optional feature.
 
-## Possible improvement
+## Possible Improvement
 
 - **Integrate RAG:** Combine RAG on course slides with the PS4 prompt strategy to ensure questions are both cognitively aligned and factually accurate according to classroom lectures, eliminating hallucinations.
 - **Automated Feedback Generation:** Expand the system to generate corrective feedback (explanation of incorrect choices) based on the corresponding Bloom's cognitive levels.

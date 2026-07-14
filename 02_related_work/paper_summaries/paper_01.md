@@ -14,7 +14,11 @@ The study addresses the problem of controlling exam question difficulty, psychom
 
 ## Method
 
-The proposed framework, named **KAQG (Knowledge Augmented Question Generation)**, integrates Item Response Theory (IRT), Bloom’s Taxonomy, and Knowledge Graphs (KG) into a distributed multi-agent RAG system. Key features include:
+### Research Methodology
+This study uses a mixed experimental approach combining a human benchmarking study — where real participants divided into difficulty groups took system-generated and official ACT exam questions — and a simulation study with 5,000 virtual test-takers modeled using the 3PL IRT model. Results are compared against official ACT exam questions as a control group to validate difficulty calibration.
+
+### Technical Method
+The proposed framework, named **KAQG (Knowledge Augmented Question Generation)**, integrates Item Response Theory (IRT), Bloom's Taxonomy, and Knowledge Graphs (KG) into a distributed multi-agent RAG system. Key features include:
 1. **Multi-Graph Isolation:** Each course subject is supported by an independent knowledge graph to eliminate cross-domain terminological noise.
 2. **PageRank-based Concept Weighting:** Ranks and selects core learning concepts in the KG using the PageRank algorithm to ensure questions cover the curriculum focus.
 3. **IRT 3PL Parameter Calibration:** Maps graph and cognitive attributes to the 3-parameter logistic (3PL) IRT model:
@@ -48,10 +52,9 @@ The study uses two complementary evaluation processes:
 
 ## Relevance to our topic
 
-- Confirms the feasibility of integrating educational theories (Bloom's Taxonomy) and psychometrics (IRT) into prompts to control the difficulty of generated questions aligning with Course Learning Outcomes (CLOs).
-- Knowledge graphs and the PageRank algorithm provide a solution for filtering and selecting core concepts from lecture slides to generate focused questions, avoiding irrelevant question generation.
+This paper is relevant to our requirements engineering focus in two ways. First, it reveals that cognitive alignment with Bloom's Taxonomy is treated as an internal system parameter rather than an instructor-selectable requirement tied to specific CLOs — confirming the absence of formally specified functional requirements for CLO selection and question tagging in existing systems. Second, the deployment complexity limitation directly motivates the need for non-functional requirements specifying infrastructure and response time constraints for LMS integration. The reliance on expert-defined difficulty weights also highlights the need for formally specified instructor input requirements in any CLO-aligned quiz generation system.
 
-## Possible improvement
+## Possible Improvement
 
 - **System Simplification:** Remove the complex DDS mechanism and replace it with a sequential RAG workflow integrated directly into the LMS API to optimize response time.
 - **Add Explanations for Wrong Answers:** Add a module to automatically generate detailed feedback for incorrect choices (distractor feedback) based on semantic relations in the knowledge graph to support student self-study.

@@ -12,6 +12,10 @@
 
 The study focuses on generating personalized corrective feedback in Intelligent Tutoring Systems (ITS). To effectively improve learning outcomes, feedback must be tailored to the specific errors made by students. However, establishing bug rules manually is highly time-consuming, expensive, and inflexible when dealing with unexpected student behavior. Relying solely on raw LLMs to solve problems and directly generate feedback is prone to hallucinations and misleading instructions.
 
+## Research Methodology
+
+This study uses an experimental design with three evaluation components: automated error classification validated against expert human annotation (Cohen's Kappa), expert human evaluation of generated feedback quality, and an automated simulated student evaluation where an LLM acts as a virtual student to test whether generated hints enable self-correction. Real student data from a College Algebra course is used as the basis for all experiments.
+
 ## Method
 
 The research team proposes integrating an LLM (specifically GPT-4) into the **Apprentice Tutors** ITS platform to automate error diagnosis and feedback generation:
@@ -51,10 +55,9 @@ The study evaluates the system through three research questions (RQs):
 
 ## Relevance to our topic
 
-- Provides a student error classification model (specifically distinguishing logical mistakes, syntax errors, and wrong field entries) to design the error diagnosis logic in our LMS.
-- Indicates that to deploy the system in real-world classes, it is mandatory to have feedback quality control or integrate a teacher review panel (Human-in-the-loop) to filter out the 35% erroneous responses.
+This paper is relevant to our requirements engineering focus in two ways. First, the 35% error rate provides concrete quantitative evidence of what happens when feedback quality thresholds are not formally specified as non-functional requirements before deployment — the system is technically functional but stakeholder-unacceptable. Second, the explicit acknowledgment that the error rate is too high for real-world deployment, combined with the absence of any specified acceptance criteria or quality gate, directly motivates the need to formally specify non-functional requirements for feedback faithfulness, maximum error tolerance, and mandatory instructor oversight conditions as part of a requirements artifact for RAG-based LMS systems.
 
-## Possible improvement
+## Possible Improvement
 
 - **RAG-based Feedback Generation:** Integrate RAG to retrieve formulas, definitions, or specific lecture slides related to the student's error. This allows the LLM to generate 100% accurate feedback grounded in classroom materials, eliminating vague or incorrect feedback.
 - **Prompt Optimization:** Apply Socratic Mentor prompting to guide students to identify their errors instead of giving them the correct answer directly.

@@ -14,25 +14,22 @@
 
 | Member | Task | Result |
 |---|---|---|
-| Nguyễn Văn A | Viết topic proposal | Hoàn thành |
+| Nguyễn Hoàng Anh Khoa | Viết abstract | Hoàn thành |
 
 
 ## Git Commits
 
-| Commit ID | Message | Aut 
+| Commit ID | Message | Author |
+|---|---|---|
 
 ## Current Problems
 
-- Chưa thống nhất được phạm vi chủ đề.
-- Chưa tìm đủ bài báo từ IEEE.
+- Không có
 
 ## Plan for Next Week
 
-- Hoàn thiện topic proposal.
-- Tìm đủ 7 bài báo liên quan.
-- Viết search_keywords.md.
+- Không có
 
 ## Questions for Instructor
 
-- Chủ đề X có thuộc phạm vi không?
-- Bài survey có được tính là bài báo liên quan không?
+- Không có

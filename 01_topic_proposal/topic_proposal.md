@@ -15,6 +15,7 @@
 ## 2. Proposed Title
 
 - **English title:** Requirements Engineering for a RAG-based LMS that Generates CLO-aligned Quizzes
+- **Vietnamese title:** Yêu cầu Kỹ thuật cho Hệ thống Quản lý Học tập dựa trên RAG cho việc sản sinh Quiz theo Chuẩn Đầu ra Học phần
 
 ---
 
@@ -26,121 +27,42 @@
 
 ## 4. Problem Statement
 
-In higher education, especially in software engineering and IT courses, instructors often face repetitive tasks in learning management, such as:
-
-* Creating quizzes and practice questions.
-* Providing feedback on student assignments.
-* Tracking learning progress.
-* Identifying students struggling with specific CLOs (Course Learning Outcomes).
-* Recommending appropriate learning materials.
-* Supporting students' self-study outside classroom hours.
-
-In traditional LMS (Learning Management Systems), most of these tasks heavily rely on manual efforts by instructors. This leads to several challenges:
-
-* High workload and time consumed in creating learning content.
-* Difficulty in personalizing learning for each student.
-* Delayed feedback for students.
-* Hard to track specific weaknesses of learners.
-* Chatbots or support systems often reply generally and lack course context.
-* AI-generated content may not align with the syllabus or CLOs.
-
-Meanwhile, Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) are capable of generating questions, creating learning feedback, magnifying materials, and personalizing content. However, integrating these AI models into an LMS in a course-aware manner and validating its real-world effectiveness remains limited. 
-
-Therefore, this study proposes a requirements engineering framework for a RAG-based LMS that generates CLO-aligned quizzes to save instructors' time and personalize student learning.
+In higher education, particularly in software engineering and IT courses, instructors face significant challenges in creating CLO-aligned assessments and providing personalized feedback at scale. While RAG-based LMS systems have been proposed as a solution, existing research focuses primarily on the technical implementation of AI components rather than on formally specifying and validating the requirements for such systems. As a result, stakeholder needs — including what instructors require from quiz generation workflows and how students interact with CLO-aligned feedback — remain insufficiently captured in the literature. Without a clear requirements specification, RAG-based LMS systems cannot be reliably designed, evaluated, or adopted in real educational contexts.
 
 ---
 
 ## 5. Motivation
 
-The rapid development of Generative AI opens up opportunities in higher education. However, current systems have limitations:
-
-* They do not integrate AI directly into the learning workflow.
-* Rely on simple chatbots without educational grounding.
-* Lack alignment with CLOs or syllabus.
-* Do not support personalized learning pathways.
-* Do not evaluate AI usefulness and pedagogical impact in real classes.
-
-In Software Engineering courses, the vast content and large student cohorts make it difficult for instructors to generate quizzes regularly, provide detailed feedback, and track learning outcomes. A RAG-based LMS can retrieve course content, generate quizzes per topic, and provide personalized feedback, which helps reduce instructor workload, speed up feedback, and improve student self-study.
+Requirements engineering provides the foundation for building systems that genuinely meet stakeholder needs. For AI-assisted educational systems, this foundation is currently missing — existing papers propose technical solutions without first establishing what instructors and students actually require, how those requirements should be specified, and how they can be validated. In the Vietnamese higher education context specifically, LMS adoption barriers are closely tied to mismatches between system capabilities and instructor workflows. A structured requirements analysis of RAG-based quiz generation systems would provide practical guidance for future development and contribute to closing the gap between AI research and real-world educational deployment.
 
 ---
 
-## 6. Target Users
+## 6. Target Context
 
-| User Role | Description |
-|---|---|
-| Student | Take quizzes, ask questions, view feedback, self-study |
-| Instructor | Manage courses, upload materials, generate quizzes, track progress |
-| Admin | Manage system and system data |
+This study targets higher education institutions in Vietnam, specifically software engineering and IT courses with large student cohorts. In these settings, instructors face significant workload in manually creating CLO-aligned assessments, while students lack timely personalized feedback. The research focuses on the context where an LMS is already in use but lacks AI-assisted quiz generation capabilities, and where CLO tracking is required by the curriculum but not systematically supported by existing tools.
 
 ---
 
-## 7. Proposed AI Model / Method
+## 7. Preliminary Research Questions
 
-- LLM & Retrieval-Augmented Generation (RAG)
+**Main RQ:** How can requirements be specified and validated for a RAG-based LMS that helps instructors generate quizzes aligned with Course Learning Outcomes?
 
----
+**RQ1:** What requirements should be collected from instructors and students to ensure generated quizzes are useful, understandable, and aligned with CLOs?
 
-## 8. System Features
+**RQ2:** What functional requirements are needed for uploading learning materials, selecting CLOs, generating quizzes, and allowing instructor review before publishing?
 
-### Student Features
-
-* Login and learning management dashboard.
-* Take AI-generated quizzes.
-* View personalized, explanatory feedback on quiz attempts.
-* Chat with AI learning assistant.
-* View learning progress and CLO achievements.
-* Receive study recommendations.
+**RQ3:** How can instructors validate whether the generated quizzes are relevant, faithful to learning materials, and suitable for students?
 
 ---
 
-### Instructor Features
-
-* Course management panel.
-* Upload course materials (syllabus, slides, textbooks).
-* Trigger automated quiz generation.
-* Monitor CLO achievement analytics.
-* View learning analytics dashboard.
-* Manage and override AI-generated feedback.
-
----
-
-### AI Features
-
-* Quiz generation based on documents.
-* Personalized explanatory feedback generation.
-* RAG-based learning assistant.
-* CLO-aware recommendations.
-
----
-
-## 9. Expected Contribution
-
-* **A working prototype of a RAG-based LMS** integrating LLMs to help instructors upload learning materials, automatically generate CLO-aligned multiple-choice questions, and allow review/edit.
-* **A detailed Software Requirements Specification (SRS)** for educational RAG features.
-* **An empirical report** comparing question generation quality between RAG-LMS and a standard LLM-only model.
-
----
-
-## 10. Evaluation Plan
-
-* **Dataset:** Slides, textbooks, and learning materials of Software Engineering courses (e.g., Software Requirements, Software Architecture).
-* **Baseline:**
-  1. *Manual:* Traditional manual quiz creation by instructors.
-  2. *LLM-only:* Quiz generation directly using LLM without RAG.
-* **Metrics:**
-  1. *Faithfulness:* Measuring if the generated questions contain hallucinations or ungrounded knowledge.
-  2. *Answer Relevance:* Measuring the logical consistency between the question and the correct answer.
-  3. *CLO Alignment Rate:* The percentage of questions accurately evaluating the selected CLO.
-* **User/Expert Evaluation:** Structured surveys from 2-3 course instructors (Expert Rating) and empirical tests with 15-20 students.
-
----
-
-## 11. Related Papers
+## 8. Related Papers
 
 | No | Title | Year | Source | Link / DOI |
 |----|-------|------|--------|------------|
-| 1 | Exploring the Integration of Virtual Assistant Using Large Language Models in Learning Management System: Enhancing Educational Accessibility and Efficiency | 2024 | IEEE (ICITSI 2024) | 10.1109/ICITSI65188.2024.10929366 |
-| 2 | LLM-Based Quiz Generation for Assessments in Learning Management System | 2025 | IEEE (ICC-ROBINS 2025) | 10.1109/ICC-ROBINS64345.2025.11086273 |
-| 3 | Enhancing Engineering Education through LLM-Driven Adaptive Quiz Generation: A RAG-Based Approach | 2024 | IEEE (FIE 2024) | 10.1109/FIE61694.2024.10893146 |
-| 4 | Generating In-Context, Personalized Feedback for Intelligent Tutors with Large Language Models | 2025 | Springer (Int. Journal of AI in Education) | 10.1007/s40593-025-00505-6 |
-| 5 | Retrieval-Augmented Generation for Educational Application: A Systematic Survey | 2025 | Elsevier (Computers and Education: AI) | 10.1016/j.caeai.2025.100417 |
+| 1 | KAQG: A Knowledge-Graph-Enhanced RAG for Difficulty-Controlled Question Generation | 2025 | arXiv / IEEE TechRxiv | 10.2139/ssrn.5254660 |
+| 2 | Leveraging In-Context Learning and RAG for Automatic Question Generation in Educational Domains | 2025 | arXiv | 10.1145/3734947.3734949 |
+| 3 | Enhancing Automated Exam Creation with RAG for Scalable Educational Assessment | 2025 | JAIT | 10.12720/jait.16.10.1430-1441 |
+| 4 | Generating In-Context, Personalized Feedback for Intelligent Tutors with LLMs | 2025 | Springer (IJAIED) | 10.1007/s40593-025-00505-6 |
+| 5 | Automated Educational Question Generation at Different Bloom's Skill Levels using LLMs | 2024 | AIED 2024 | 10.1007/978-3-031-64299-9_12 |
+| 6 | Using Focus to Personalise Learning and Feedback in Software Engineering Education | 2023 | IEEE/ACM ICSE-SEET | 10.1109/ICSE-SEET58685.2023.00033 |
+| 7 | Lecturers' adoption to use the online LMS: Empirical evidence from TAM2 model for Vietnam | 2020 | HCMCOU Journal of Science | 10.46223/HCMCOUJS.econ.en.10.1.216.2020 |
