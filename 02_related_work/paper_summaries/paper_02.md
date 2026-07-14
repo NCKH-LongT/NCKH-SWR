@@ -5,12 +5,16 @@
 - **Title:** Leveraging In-Context Learning and Retrieval-Augmented Generation for Automatic Question Generation in Educational Domains
 - **Authors:** Subhankar Maity, Aniket Deroy, Sudeshna Sarkar
 - **Year:** 2025
-- **Source:** arXiv
+- **Source:** arXiv (Accepted at FIRE 2025 — Forum for Information Retrieval Evaluation)
 - **Link / DOI:** https://arxiv.org/abs/2501.17397
 
 ## Problem
 
 The study addresses the problem of automated educational question generation (AQG) that maintains pedagogical quality and contextual alignment. Traditional question generation methods often produce questions that are detached from the lesson context or lack pedagogical structure. Meanwhile, deep learning fine-tuning approaches (such as T5 or BART) require a massive amount of specialized labeled data, which is extremely scarce in the educational domain. Additionally, pure LLMs without contextual grounding are highly prone to hallucinations when generating questions.
+
+## Research Methodology
+
+This study uses a comparative experiment design, evaluating three approaches — ICL, RAG, and a Hybrid Model — against fine-tuned baselines using both automated metrics and human evaluation. A panel of 3 high school teachers and 2 students evaluated generated questions on a 5-point Likert scale across 5 pedagogical criteria, with inter-rater agreement measured by Fleiss's Kappa.
 
 ## Method
 
@@ -49,10 +53,9 @@ The study combines two evaluation methods:
 
 ## Relevance to our topic
 
-- Confirms that a **Hybrid model (RAG combined with Few-shot prompting)** is the optimal solution for an LMS generating quizzes based on lecture slides/materials, producing questions that are both context-rich and cognitively complex.
-- Provides a standard pedagogical evaluation framework (5-criteria rubric: grammaticality, appropriateness, relevance, complexity, answerability) to apply to the empirical evaluation phase of our research.
+This paper is relevant to our requirements engineering focus in two ways. First, the 5-criterion pedagogical rubric — grammaticality, appropriateness, relevance, complexity, answerability — validated by teachers and students represents an implicitly defined set of instructor-facing requirements for quiz quality, confirming that stakeholder validation criteria for quiz generation exist and can be systematically specified. Second, the explicit acknowledgment that no teacher review interface exists before publishing questions directly identifies an unspecified functional requirement for an instructor approval workflow — one of the central gaps this study addresses.
 
-## Possible improvement
+## Possible Improvement
 
 - **Advanced RAG Upgrades:** Instead of basic FAISS on raw text, apply slide-structured chunking and integrate Re-ranking to increase the accuracy of retrieved information and reduce noise.
 - **CLO Alignment:** Adjust the few-shot examples in the Hybrid Model's prompt to directly reflect the cognitive levels required by the selected Course Learning Outcomes (CLOs).
